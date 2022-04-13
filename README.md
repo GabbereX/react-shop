@@ -1,8 +1,8 @@
 # Проект магазина на ReactJS
 ____
-DEMO: [React Movies](https://gabberex.github.io/react-movies/)
+DEMO: [React Movies](https://gabberex.github.io/react-shop/)
 ____
-API: [OMDBAPI.COM](https://www.omdbapi.com)
+API: [FORTNITE.IO](https://fortniteapi.io)
 ____
 ## Установка всех пакетов
 >npm i
@@ -14,5 +14,7 @@ ____
 >npm run build:prod
 ____
 ### Возможности:
-- Поиск по фильмам
-- Фильтрация по фильмам
+- Добавить товар в карзину
+- Изменить количество товара
+- Подсчет общей стоимости
+- Удаление товара из корзины
