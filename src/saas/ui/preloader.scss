@@ -1,0 +1,38 @@
+.preloader {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #ccc;
+  overflow: hidden;
+  &__bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: var(--gradient-reverse);
+    animation: linear_loader 2s linear infinite;
+  }
+}
+
+@keyframes linear_loader {
+  0% {
+    right: 100%;
+    width: 10%;
+  }
+  60% {
+    right: 0;
+    width: 40%;
+  }
+  70% {
+    right: 0;
+    width: 0;
+  }
+  80% {
+    right: 0;
+    width: 0;
+  }
+  100% {
+    right: 0;
+    width: 0;
+  }
+}

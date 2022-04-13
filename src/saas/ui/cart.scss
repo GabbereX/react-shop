@@ -1,0 +1,53 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+  background: rgba(88, 189, 255, 1);
+  border-radius: 5px;
+  z-index: 5;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  &:hover {
+    background: rgba(112, 185, 0, 1);
+  }
+  &__icon {
+    margin-right: 3px;
+    width: calc(100% - 20px);
+  }
+  &__quantity {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 6rem;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.9);
+  animation: show-toast 0.5s ease-in-out;
+  &__element {
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+@keyframes show-toast {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 2rem;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,43 @@
+.header {
+  background: var(--gradient);
+  height: 75px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  &__link {
+    color: #fff;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: #fff;
+      transition: width 0.4s ease;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+
+      }
+    }
+  }
+}
