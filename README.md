@@ -1,6 +1,6 @@
 # Проект магазина на ReactJS
 ____
-DEMO: [React Movies](https://gabberex.github.io/react-shop/)
+DEMO: [React Shop](https://gabberex.github.io/react-shop/)
 ____
 API: [FORTNITE.IO](https://fortniteapi.io)
 ____
